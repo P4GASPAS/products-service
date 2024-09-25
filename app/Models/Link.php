@@ -12,6 +12,8 @@ class Link extends Model
 
     public $timestamp = true;
 
+    protected $guarded = [];
+
     public function order(): BelongsTo
     {
         return $this->belongsTo(Order::class);

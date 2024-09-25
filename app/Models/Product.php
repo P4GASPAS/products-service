@@ -12,6 +12,8 @@ class Product extends Model
 
     public $timestamp = true;
 
+    protected $guarded = [];
+
     public function link(): HasMany
     {
         return $this->hasMany(Link::class);
